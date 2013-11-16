@@ -1,1 +1,0 @@
-../available/51_set-up.sh
