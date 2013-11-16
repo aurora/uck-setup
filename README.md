@@ -8,10 +8,6 @@ Supported Ubuntu versions:
 
 ## Usage
 
-Run the following command in the uck customization console:
-
-    (exec 3<&1; bash <&3 <(wget -qO- https://raw.github.com/aurora/uck-setup/master/run.sh))
-
 ## Disclaimer
 
 Use with caution. This software may contain serious bugs. I can not be made responsible for
