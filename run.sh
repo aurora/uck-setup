@@ -48,5 +48,5 @@ cd ~/tmp
 
 # execute scripts
 for i in $(ls -1 $DIR/$LINUX/enabled/); do 
-    source $i
+    source $DIR/$LINUX/enabled/$i
 done
