@@ -24,14 +24,13 @@
 set -e
 
 # determine linux
-# if ! command -v lsb_release >/dev/null 2>&1; then
-#     echo "operating system is not supported"
-#     uname -a
-#     exit 1
-# fi
-#     
-# LINUX="$(lsb_release -s -i | tr '[A-Z]' '[a-z]')-$(lsb_release -s -r)-$(uname -m)"
-LINUX="ubuntu-13.10-x86_64";
+if ! command -v lsb_release >/dev/null 2>&1; then
+    echo "operating system is not supported"
+    uname -a
+    exit 1
+fi
+    
+LINUX="$(lsb_release -s -i | tr '[A-Z]' '[a-z]')-$(lsb_release -s -r)-$(uname -m)"
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 if [ ! -d $DIR/$LINUX ]; then
